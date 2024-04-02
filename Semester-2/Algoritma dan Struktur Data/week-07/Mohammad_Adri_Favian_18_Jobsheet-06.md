@@ -176,7 +176,7 @@ Memnambahkan:
 </br>
 
 Kode program setelah penambahan:
-[klik ini (BukuMain18.java)](./src/BukuMain18.java) dan [(PencarianBuku18.java)](./src/PencarianBuku18.java)
+[klik ini (BukuMain18.java)](./src/P5/BukuMain18.java) dan [(PencarianBuku18.java)](./src/P5/PencarianBuku18.java)
 </br></br>
 
 ### Verifikasi Hasil 
@@ -224,7 +224,7 @@ dengan kode Buku yang acak. Jelaskan Mengapa hal tersebut bisa terjadi?</br>
 
     - Untuk memperbaiki masalah itu kita dapat modifikasi kode pada method `FindSeqSeacrh()` yang semula `j = posisi` menjadi `posisi = j`, sehingga program mengembalikan nilai posisi dari data yang ditemukan.
 
-    - Kode program setelah modifikasi : [klik ini (PencarianBuku18.java)](./src/PencarianBuku18.java)
+    - Kode program setelah modifikasi : [klik ini (PencarianBuku18.java)](./src/P5/PencarianBuku18.java)
 
     - Output program setelah dimodifikasi agar dapat menemukan databuku meski dengan kode buku yang acak: (sementara jumlah databuku yang dapat ditampung saya ubah untuk menghemat text output)
 
