@@ -10,7 +10,7 @@
 
 ### Langkah-langkah Percobaan
 
-- Full program ada di [Queue.java](./Praktikum1/Queue.java) dan [QueueMain.java](./Praktikum1/QueueMain.java)
+- Full program ada di [Queue.java](./src/Praktikum1/Queue.java) dan [QueueMain.java](./src/Praktikum1/QueueMain.java)
 
 Output:
 
@@ -111,7 +111,7 @@ queue overflow dan queue underflow, program dihentikan!
 
 ### Langkah - langkah percobaan
 
-- Full program ada di [NasabahMain.java](./Praktikum2/NasabahMain.java) dan [Nasabah.java](./Praktikum2/Nasabah.java)
+- Full program ada di [NasabahMain.java](./src/Praktikum2/NasabahMain.java) dan [Nasabah.java](./src/Praktikum2/Nasabah.java)
 
 Output:
 
@@ -205,10 +205,10 @@ dapat dipanggil!
 pembeli akan mengantri, maka dia harus mendaftarkan nama, dan nomor HP seperti yang 
 digambarkan pada Class diagram berikut: 
 
-Full program ada di package [Tugas](./Tugas):
-- [Main.java](./Tugas/Main.java)
-- [Pembeli.java](./Tugas/Pembeli.java)
-- [Queue.java](./Tugas/Queue.java)
+Full program ada di package [Tugas](./src/Tugas):
+- [Main.java](./src/Tugas/Main.java)
+- [Pembeli.java](./src/Tugas/Pembeli.java)
+- [Queue.java](./src/Tugas/Queue.java)
 
 Output:
 
