@@ -4,15 +4,15 @@ public class SingleLinkedList {
     Node head, tail;
     
     boolean isEmpty() {
-        return head == null;
+        return head == null; // head harus berisi null
     }
 
     void print() {
-        if (!isEmpty()) {
+        if (!isEmpty()) { // memastikan linked list tidak kosong
             Node tmp = head;
-            System.out.println("Isi Linked List");
-            while (tmp != null) {
-                System.out.println(tmp.data + "\t");
+            System.out.print("Isi Linked List: \t");
+            while (tmp != null) { 
+                System.out.print(tmp.data + "\t");
                 tmp = tmp.next;
             }
             System.out.println("");
@@ -24,21 +24,23 @@ public class SingleLinkedList {
     void addFirst(int input) {
         Node ndInput = new Node (input, null);
         if (isEmpty()) {
-            head = ndInput;
+            // menghapus kode yang tidak perlu
+            head = ndInput; 
             tail = ndInput;
         } else {
+            ndInput.next = head;
             head = ndInput;
-            tail = ndInput;
         }
     }
-
+    
     void addLast(int input) {
         Node ndInput = new Node(input, null);
         if (isEmpty()) {
             head = ndInput;
             tail = ndInput;
         } else {
-            head = ndInput;
+            // memperbaiki variable yang diupdate
+            tail.next = ndInput;
             tail = ndInput;
         }
     }
@@ -50,8 +52,8 @@ public class SingleLinkedList {
             if(temp.data == key) {
                 ndInput.next=temp.next;
                 temp.next = ndInput;
-                if (ndInput.next != null) {
-                    tail = ndInput;
+                if (ndInput.next == null) { // mengecek apakah node terakhir
+                    tail = ndInput; 
                     break;
                 }
             } 
@@ -59,38 +61,37 @@ public class SingleLinkedList {
         } while(temp != null);
     }
 
-    void insertAt (int index, int input) {
-        Node ndInput = new Node(input, null);
-        if (index < 0) {
-            System.out.println("Fix the logic");
+    void insertAt(int index, int input) {
+        if (index < 0) { // memperbaiki logika 
+            System.out.println("Indeks tidak valid!");
         } else if (index == 0) {
             addFirst(input);
         } else {
+            Node ndInput = new Node(input, null);
             Node temp = head;
-            for(int i=0; i < index - 1 && temp != null; i++) {
+            for (int i=0; i < index - 1; i++) { // - 1 agar temp ditempatkan pada index yang benar
                 temp = temp.next;
             }
-            if (temp!=null) {
-                ndInput.next = temp.next;
-                temp.next = ndInput;
-                if (ndInput.next == null) {
-                    tail = ndInput;
-                }
-            } else {
-                System.out.println("Index out of bounds");
+            ndInput.next = temp.next;
+            temp.next = ndInput;
+            if (ndInput.next == null) {
+                tail = ndInput;
             }
         }
     }
+    
 
     int getData(int index) {
+        // ambil nilai data tepat sesuai indeks yang ditunjuk
         Node tmp =head;
-        for(int i=0; i < index + 1; i++) {
+        for(int i=0; i < index - 1; i++) {
             tmp = tmp.next;
         }
         return tmp.next.data;
     }
 
     int indexOf(int key) {
+        // Kehatui posisi nodemu ada di indeks mana
         Node tmp = head;
         int index = 0;
         while (tmp != null && tmp.data != key) {
@@ -98,9 +99,9 @@ public class SingleLinkedList {
             index++;
         }
         if (tmp != null) {
-            return 1;
-        } else {
             return index;
+        } else {
+            return -1; // jika tidak ditemukan
         }
     }
 
@@ -116,19 +117,20 @@ public class SingleLinkedList {
     }
 
     void removeLast() {
+        // modifikasi operator agar node terakhir dapat dihapus
         if (isEmpty()) {
             System.out.println("Linked list masih kosong" +
-                    "tidak dapat dihapus");
-        } else if (head != tail) {
+                    " tidak dapat dihapus");
+        } else if (head == tail) {
             head = tail = null;
-        } else {
+        } else {    
             Node temp = head;
-            while (temp.next != null) {
+            while (temp.next == null) {
                 temp = temp.next;
             }
             temp.next = null;
-            tail = temp.next;
-        }
+            tail = temp; 
+        }   
     }
 
     void remove (int key) {
