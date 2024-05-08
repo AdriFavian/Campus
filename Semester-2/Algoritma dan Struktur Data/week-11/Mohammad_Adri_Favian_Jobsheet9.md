@@ -6,7 +6,7 @@
 **Absen :** 18
 
 ---
-## Praktikum - Pembautan Single Linked List
+## Praktikum - Pembuatan Single Linked List
 
 ### Langkah-langkah Percobaan
 
@@ -97,7 +97,7 @@ Isi Linked List:        833
 dipelajari sebelumnya untuk menginputkan data. 
 
 - Full Program
-    - [Node.java](./src/Tugas/nomor1/Mahasiswa.java)
+    - [Mahasiswa.java](./src/Tugas/nomor1/Mahasiswa.java)
     - [SingleLinkedList.java](./src/Tugas/nomor1/SingleLinkedList.java)
     - [SLLMain.java](./src/Tugas/nomor1/SLLMain.java)
 
@@ -119,9 +119,9 @@ a. Implementasi antrian menggunakan Queue berbasis Linked List!
 b. Program merupakan proyek baru, bukan modifikasi dari soal nomor 1!
 
 - Full Program
-    - [Node.java](./src/Tugas/nomor2/Mahasiswa.java)
-    - [SingleLinkedList.java](./src/Tugas/nomor2/Main.java)
-    - [SLLMain.java](./src/Tugas/nomor2/Queue.java)
+    - [Mahasiswa.java](./src/Tugas/nomor2/Mahasiswa.java)
+    - [Main.java](./src/Tugas/nomor2/Main.java)
+    - [Queue.java](./src/Tugas/nomor2/Queue.java)
 
 - Output:
 
