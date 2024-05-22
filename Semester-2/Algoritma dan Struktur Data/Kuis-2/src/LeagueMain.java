@@ -23,7 +23,7 @@ public class LeagueMain {
         league.addTeam(new Team("West Ham United"));
         league.addTeam(new Team("Wolverhampton Wanderers"));
 
-        String[] namaTeam = { // meyimpan nama team, untuk di proses di addHasilTanding()
+        String[] namaTeam = { // meyimpan nama team untuk keperluan proses addHasilTanding() 
             "Arsenal", "Aston Villa", "Bournemouth", "Brentford", "Brighton And Hove Albion",
             "Burnley", "Chelsea", "Crystal Palace", "Everton", "Fulham", "Liverpool",
             "Luton Town", "Manchester City", "Manchester United", "Newcastle United",
