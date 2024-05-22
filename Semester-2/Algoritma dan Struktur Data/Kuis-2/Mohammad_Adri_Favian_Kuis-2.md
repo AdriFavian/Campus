@@ -6,6 +6,7 @@
 **Absen :** 18
 
 ---
+- Full program ada di [LeagueMain.java](./src/LeagueMain.java)
 
 Output:
 
