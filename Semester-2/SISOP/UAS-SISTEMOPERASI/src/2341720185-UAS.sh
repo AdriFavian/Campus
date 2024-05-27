@@ -194,23 +194,29 @@ while true; do
             echo "3. Perkalian"
             echo "4. Pembagian"
             read -p "Pilih operasi: " operasi
-            read -p "Masukkan angka pertama: " angka1
-            read -p "Masukkan angka kedua: " angka2
 
             case $operasi in
                 1)
+                    read -p "Masukkan angka pertama: " angka1
+                    read -p "Masukkan angka kedua: " angka2
                     hasil=$((angka1 + angka2))
                     echo "Hasil: $hasil"
                     ;;
                 2)
+                    read -p "Masukkan angka pertama: " angka1
+                    read -p "Masukkan angka kedua: " angka2
                     hasil=$((angka1 - angka2))
                     echo "Hasil: $hasil"
                     ;;
                 3)
+                    read -p "Masukkan angka pertama: " angka1
+                    read -p "Masukkan angka kedua: " angka2
                     hasil=$((angka1 * angka2))
                     echo "Hasil: $hasil"
                     ;;
                 4)
+                    read -p "Masukkan angka pertama: " angka1
+                    read -p "Masukkan angka kedua: " angka2
                     if [ $angka2 -ne 0 ]; then
                         hasil=$((angka1 / angka2))
                         echo "Hasil: $hasil"
