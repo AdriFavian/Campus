@@ -30,3 +30,4 @@
 | 15 | Lihat Proses yang Sedang Berjalan | Melihat proses yang sedang berjalan dengan perintah ***ps aux*** |
 | 16 | Generate Angka Random | Menghasilkan angka acak dalam rentang tertentu |
 | 17 | Kalkulator Sederhana | Melakukan operasi matematika sederhana |
+| 18 | Tampilan Jam dan Tanggal | Menampilkan Jam dan Tanggal sekarang dengan perintah **date**|
