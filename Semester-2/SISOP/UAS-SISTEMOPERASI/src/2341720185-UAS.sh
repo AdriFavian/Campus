@@ -12,7 +12,7 @@ while true; do
     echo "1. Lihat Isi Folder"
     echo "2. Lihat Isi File"
     echo "3. Pindah File/Folder"
-    echo "4. Salin File/Folder ke folder"
+    echo "4. Salin File/Folder"
     echo "5. Hapus File/Folder"
     echo "6. Rename File/Folder"
     echo "7. Lihat Semua File dan Folder di Direktori Saat Ini"
@@ -36,7 +36,7 @@ while true; do
     echo -e "\nMISC"
     echo "20. Generate Angka Random"
     echo "21. Kalkulator Sederhana"
-    echo "0. Keluar"
+    echo -e "\n0. Keluar"
     echo "======================================="
     read -p "Masukkan pilihan: " pilihan
 
@@ -44,7 +44,7 @@ while true; do
         1)
             read -p "Masukkan nama folder: " dir
             if [ -d "$dir" ]; then
-                ls "$dir"
+                ls -l "$dir"
             else
                 echo "Folder tidak ditemukan!"
             fi
@@ -120,7 +120,7 @@ while true; do
             read -p "Masukkan nama file: " filename
             if [ -f "$filename" ]; then
                 count=$(wc -m < "$filename")
-                echo "Jumlah huruf di file: $count"
+                echo "Jumlah karakter di file: $count"
             else
                 echo "File tidak ditemukan!"
             fi
@@ -221,7 +221,7 @@ while true; do
                         hasil=$((angka1 / angka2))
                         echo "Hasil: $hasil"
                     else
-                        echo "Pembagian dengan nol tidak diperbolehkan!"
+                        echo "Tidak dapat pembagian dengan nol!"
                     fi
                     ;;
                 *)
