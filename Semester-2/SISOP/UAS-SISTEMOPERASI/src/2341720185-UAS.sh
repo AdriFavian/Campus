@@ -44,7 +44,7 @@ while true; do
         1)
             read -p "Masukkan nama folder: " dir
             if [ -d "$dir" ]; then
-                ls -l "$dir"
+                ls "$dir"
             else
                 echo "Folder tidak ditemukan!"
             fi
