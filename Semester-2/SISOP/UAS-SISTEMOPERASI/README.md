@@ -14,7 +14,7 @@
 
 | No | Fitur                                           | Detail                                                                 |
 |----|-------------------------------------------------|------------------------------------------------------------------------|
-| 1  | Lihat Isi Folder                                | Melihat daftar isi sebuah direktori dengan perintah `ls -l`             |
+| 1  | Lihat Isi Folder                                | Melihat daftar isi sebuah direktori dengan perintah `ls`             |
 | 2  | Lihat Isi File                                  | Menampilkan isi file dengan perintah `cat`                              |
 | 3  | Pindah File/Folder                              | Memindahkan file dengan perintah `mv`                                   |
 | 4  | Salin File/Folder                               | Menyalin file atau folder dengan perintah `cp -r`                       |
