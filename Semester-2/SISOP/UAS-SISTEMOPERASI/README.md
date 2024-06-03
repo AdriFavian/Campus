@@ -36,7 +36,7 @@
 | 20 | Generate Angka Random                           | Menghasilkan angka acak dalam rentang tertentu dengan perintah `RANDOM`                          |
 | 21 | Kalkulator Sederhana                            | Melakukan operasi matematika sederhana                                  |
 
-### Tampilan Program
+### Tampilan Menu Awal Program
 ```go
 Program Pengelola File dan Informasi Sistem
 =======================================
