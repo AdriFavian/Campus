@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while true; do
-    echo "Program Sederhana Saya"
+    echo "Program Pengelola File dan Informasi Sistem"
     echo "======================================="
     echo "Time: $(date +'%H:%M:%S')"
     echo "$(date +'%A, %d %B %Y')"
@@ -33,7 +33,7 @@ while true; do
     echo "18. Lihat History perintah"
     echo "19. Lihat Proses yang Sedang Berjalan"
 
-    echo -e "\nMISC"
+    echo -e "\nOTHER"
     echo "20. Generate Angka Random"
     echo "21. Kalkulator Sederhana"
     echo -e "\n0. Keluar"

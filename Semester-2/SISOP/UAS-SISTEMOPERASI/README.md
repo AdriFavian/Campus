@@ -10,7 +10,7 @@
 
 # SISTEM OPERASI
 
-## Fitur Program
+## Program Pengelola File dan Informasi Sistem
 
 | No | Fitur                                           | Detail                                                                 |
 |----|-------------------------------------------------|------------------------------------------------------------------------|
@@ -33,12 +33,12 @@
 | 17 | Lihat Ruang Disk yang Tersedia                  | Melihat ruang disk yang tersedia dengan perintah `df -h`                |
 | 18 | Lihat History Perintah                          | Melihat history perintah dengan perintah `history`                      |
 | 19 | Lihat Proses yang Sedang Berjalan               | Melihat proses yang sedang berjalan dengan perintah `ps aux`            |
-| 20 | Generate Angka Random                           | Menghasilkan angka acak dalam rentang tertentu                          |
+| 20 | Generate Angka Random                           | Menghasilkan angka acak dalam rentang tertentu dengan perintah `RANDOM`                          |
 | 21 | Kalkulator Sederhana                            | Melakukan operasi matematika sederhana                                  |
 
 ### Tampilan Program
 ```go
-Program Sederhana Saya
+Program Pengelola File dan Informasi Sistem
 =======================================
 Time: 16:32:59
 Sunday, 02 June 2024
@@ -70,7 +70,7 @@ Informasi
 18. Lihat History perintah
 19. Lihat Proses yang Sedang Berjalan
 
-MISC
+OTHER
 20. Generate Angka Random
 21. Kalkulator Sederhana
 
