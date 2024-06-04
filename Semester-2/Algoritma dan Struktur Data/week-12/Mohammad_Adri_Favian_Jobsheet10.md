@@ -135,11 +135,11 @@ Size : 1
     ```
     
     **Jawab**:</br>
-    - 
+     
 
 2. Bagaimana cara mendeteksi posisi data ada pada bagian akhir pada method removeLast()?</br>
     **Jawab**:</br>
-    - 
+     
 
 3. Jelaskan alasan potongan kode program di bawah ini tidak cocok untuk perintah remove!</br>
     ```java
@@ -149,7 +149,7 @@ Size : 1
     ```
     
     **Jawab**:</br>
-    - 
+     
 
 4. Jelaskan fungsi kode program berikut ini pada fungsi remove!</br>
     ```java
@@ -158,11 +158,41 @@ Size : 1
     ```
     
     **Jawab**:</br>
-    - 
+     
 
 
 ## Kegiatan Praktikum 3
 
+### Tahapan Percobaan
+
+- Menambahkan method baru di class DoubleLinkedLists:
+    - getFirst()
+    - getLast()
+    - get(int index)
+    </br>
+Kode Program diupdate: [DoubleLinkedLists.java](./src/doublelinkedlist/DoubleLinkedLists.java)
+
+- Tambahan di class Main: [DoubleLinkedListsMain.java](./src/doublelinkedlist/DoubleLinkedListsMain.java)
+
+### Verifikasi Hasil Percobaan
+
+```java
+Linked Lists kosong
+Size : 0
+======================================
+7       3       4
+berhasil diisi
+Size : 3
+======================================
+7       40      3       4
+berhasil diisi
+Size : 4
+======================================
+Data awal pada Linked Lists adalah 7
+Data akhir pada Linked Lists adalah 4
+Data indeks ke-1 pada Linked Lists adalah 40
+```
+### Pertanyaan Percobaan
 
 
 
