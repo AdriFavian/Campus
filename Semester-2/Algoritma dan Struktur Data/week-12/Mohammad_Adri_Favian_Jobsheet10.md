@@ -128,6 +128,40 @@ Size : 1
 
 ### Pertanyaan Percobaan
 
+1. Apakah maksud statement berikut pada method removeFirst()?</br>
+    ```java
+    head = head.next; 
+    head.prev = null; 
+    ```
+    
+    **Jawab**:</br>
+    - 
+
+2. Bagaimana cara mendeteksi posisi data ada pada bagian akhir pada method removeLast()?</br>
+    **Jawab**:</br>
+    - 
+
+3. Jelaskan alasan potongan kode program di bawah ini tidak cocok untuk perintah remove!</br>
+    ```java
+    Node tmp = head.next;
+    head.next=tmp.next;
+    tmp.next.prev=head;
+    ```
+    
+    **Jawab**:</br>
+    - 
+
+4. Jelaskan fungsi kode program berikut ini pada fungsi remove!</br>
+    ```java
+    current.prev.next = current.next;
+    current.next.prev = current.prev;
+    ```
+    
+    **Jawab**:</br>
+    - 
+
+
+## Kegiatan Praktikum 3
 
 
 
