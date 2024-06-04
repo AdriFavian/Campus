@@ -38,49 +38,98 @@ Size : 0
 
 1. Jelaskan perbedaan antara single linked list dengan double linked lists!</br>
     **Jawab**:</br>
-    - 
+    - perbedaan terletak pada pointernya. Pada single linked list pointer hanya ada 1, yaitu next. Merujuk ke node selanjutnya
+    - Pada double linked list terdapat 2 pointer, yaitu next dan previous. Merujuk node selanjutnya dan sebelum node.
 
 2. Perhatikan class Node, di dalamnya terdapat atribut next dan prev. Untuk apakah atribut tersebut?</br>
     **Jawab**:</br>
-    - 
+    - digunakan untuk menghubungkan node sekarang (current) dengan node sebelumnya (prev), ke node selanjutnya (next).
 
-3. Perhatikan konstruktor pada class DoubleLinkedLists. Apa kegunaan inisialisasi atribut head dan size seperti pada gambar berikut ini?</br>
+3. Perhatikan konstruktor pada class DoubleLinkedLists. Apa kegunaan inisialisasi atribut head dan size seperti pada kode berikut ini?</br>
+    ```java
+        public DoubleLinkedLists() {
+        head = null;
+        size = 0;
+    }
+    ```
+
     **Jawab**:</br>
-    - 
+    - untuk mengatur kondisi awal dari pembuatan double linked lists
+    - diberi nilai null pada head dan size = 0 dikarenakan double linked lists memang masih kosong saat pertama kali dibuat.
 
 4. Pada method addFirst(), kenapa dalam pembuatan object dari konstruktor class Node prev dianggap sama dengan null? </br>
     ```java
     Node newNode = new Node(null, item, head);
     ```
-    </br>
+    
     **Jawab**:</br>
-    -
+    - Dikarenakan pada node baru yang disisipkan pada posisi pertama akan menjadi head baru, dimana tidak ada node yang dapat dirujuk sebagai node sebelumnya, sehingga prev berisi null.
 
 5. Perhatikan pada method addFirst().  Apakah arti statement head.prev = newNode ?</br>
     **Jawab**:</br>
-    - 
+    - prev dari head yang lama akan merujuk ke node yang baru yaitu node yang disisipkan di posisi pertama yang menjadi head baru pada double linkes lists.
 
 6. Perhatikan isi method addLast(), apa arti dari pembuatan object Node dengan mengisikan parameter prev dengan current, dan next dengan null?</br>
     ```java
     Node newNode = new Node(current, item, null); 
     ```
-    </br>
+    
     **Jawab**:</br>
-    - 
+    - parameter prev diisi current: agar pointer prev dari tail yang baru dari double linked lists ini merujuk ke tail yang lama yaitu current.
+    - parameter next diisi null: karena tail baru ini tidak merujuk ke node lain karena diposisikam di akhir di double linked lists.
 
 7. Pada method add(), terdapat potongan kode program sebagai berikut: </br>
     ```java
      if (current.prev == null) {
-                Node newNode = new Node(null, item, current);
-                current.prev = newNode;
-                head = newNode;
+        Node newNode = new Node(null, item, current);
+        current.prev = newNode;
+        head = newNode;
     ```
-    </br>
+    
     jelaskan maksud dari kode tersebut</br>
     **Jawab**:</br>
-    - 
+    - `if (current.prev == null)`: mengecek apakah node saat ini (current) adalah head saat ini pada list, pointer prev merujuk ke node sebelumnya. Jika current.prev = null, ini berarti tidak ada node sebelum current, sehingga menjadikan sebagai head.
+    - `Node newNode = new Node(null, item, current)`: membuat node baru, parameter prev diisi null, karena ini akan menjadi kepala baru (tidak ada node sebelumnya), parameter next diisi current, karena node baru disisipkan sebelum head saat ini.
+    - `current.prev = newNode`: dikarenakan current sekarang menjadi node, pointer prev diupdate menjadi merujuk ke newNode yang baru dibuat.
+    - `head = newNode`: head diupdate merujuk ke newNode.
 
 ## Kegiatan Praktikum 2
+
+### Tahapan Percobaan
+
+- Menambahkan method baru di class DoubleLinkedLists:
+    - removeFirst()
+    - removeLast()
+    - remove(int index)
+    </br>
+Kode Program diupdate: [DoubleLinkedLists.java](./src/doublelinkedlist/DoubleLinkedLists.java)
+
+- Tambahan di class Main: [DoubleLinkedListsMain.java](./src/doublelinkedlist/DoubleLinkedListsMain.java)
+
+### Verifikasi Hasil Percobaan
+
+```java
+50      40      10      20
+berhasil diisi
+Size : 4
+======================================
+40      10      20
+berhasil diisi
+Size : 3
+======================================
+40      10
+berhasil diisi
+Size : 2
+======================================
+40
+berhasil diisi
+Size : 1
+```
+
+### Pertanyaan Percobaan
+
+
+
 
 
 
