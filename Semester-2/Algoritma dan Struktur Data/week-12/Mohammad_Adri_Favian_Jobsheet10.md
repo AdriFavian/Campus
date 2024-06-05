@@ -152,7 +152,7 @@ Size : 1
     ```
     
     **Jawab**:</br>
-     
+    - Kode tersebut hanya bekerja untuk menghapus node kedua (setelah node head), bukan untuk node dengan indeks tertentu.
 
 4. Jelaskan fungsi kode program berikut ini pada fungsi remove!</br>
     ```java
