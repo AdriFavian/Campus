@@ -1,8 +1,8 @@
-public class DoubleLinkedList {
+public class DoubleLinkedLists {
     Node head, tail;
     int size;
 
-    public DoubleLinkedList() {
+    public DoubleLinkedLists() {
         head = tail = null;
         size = 0;
     }
@@ -47,7 +47,7 @@ public class DoubleLinkedList {
             System.out.println("+++++++++++++++++++++++");
             System.out.println("|No.   |Nama        |");
             while (current != null) {
-                System.out.println("|" + current.nomorAntrian + "      |" + current.nama + "            |");
+                System.out.println("|" + current.nomorAntrian + "   |" + current.nama + "        |");
                 current = current.next;
             }
             System.out.println("Sisa Antrian: " + size);

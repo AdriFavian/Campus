@@ -12,7 +12,7 @@
 
 - Full Program
     - [Node.java](./src/doublelinkedlist/Node.java)
-    - [DoubleLinkedListsMain.java](./src/doublelinkedlist/DoubleLinkedLists.java)
+    - [DoubleLinkedLists.java](./src/doublelinkedlist/DoubleLinkedLists.java)
     - [DoubleLinkedListsMain.java](./src/doublelinkedlist/DoubleLinkedListsMain.java)
 
 ### Verifikasi Hasil Percobaan
@@ -255,11 +255,87 @@ Data indeks ke-1 pada Linked Lists adalah 40
         - kode pertama: Lebih rentan terhadap kesalahan jika ada bug dalam pengelolaan `size`. Misalnya, jika ada operasi penambahan atau penghapusan yang tidak mengupdate `size` dengan benar, hasil dari `isEmpty()` bisa salah.
         - kode kedua: Lebih langsung, karena hanya memeriksa apakah `head` menunjuk ke `node`. Jika linked list kosong, `head` selalu `null`.
 
+
 ## Tugas Praktikum
 Buat program antrian vaksinasi menggunakan queue berbasis double linked list sesuai ilustrasi 
 dan menu di bawah ini! (counter jumlah antrian tersisa di menu cetak(3) dan data orang yang 
 telah divaksinasi di menu Hapus Data(2) harus ada)  
 
+- Full Program
+    - [Node.java](./src/tugas_praktikum/no_1/Node.java)
+    - [VaksinasiMain.java](./src/tugas_praktikum/no_1/VaksinasiMain.java)
+    - [DoubleLinkedLists.java](./src/tugas_praktikum/no_1/DoubleLinkedLists.java)
 
+Output:
+- Menu Awal dan Penambahan Data 
 
+```go
++++++++++++++++++++++++++++++
+PENGANTRI VAKSIN EXTRAVAGANZA
++++++++++++++++++++++++++++++
+1. Tambah Data Penerima Vaksin
+2. Hapus Data Pengantri Vaksin
+3. Daftar Penerima Vaksin
+4. Keluar
++++++++++++++++++++++++++++++
+1
+-----------------------------
+Masukkan Data Penerima Vaksin
+-----------------------------
+Nomor Antrian: 123
+Nama Penerima: Joko
+```
 
+- Cetak Data
+
+```powershell
++++++++++++++++++++++++++++++
+PENGANTRI VAKSIN EXTRAVAGANZA
++++++++++++++++++++++++++++++
+1. Tambah Data Penerima Vaksin
+2. Hapus Data Pengantri Vaksin
+3. Daftar Penerima Vaksin
+4. Keluar
++++++++++++++++++++++++++++++
+3
++++++++++++++++++++++++
+Daftar Pengantri Vaksin
++++++++++++++++++++++++
+|No.   |Nama        |
+|123   |Joko        |
+|124   |Mely        |
+|135   |Johan        |
+|146   |Rosi        |
+Sisa Antrian: 4
+```
+
+- Hapus Data
+
+```powershell
++++++++++++++++++++++++++++++
+PENGANTRI VAKSIN EXTRAVAGANZA
++++++++++++++++++++++++++++++
+1. Tambah Data Penerima Vaksin
+2. Hapus Data Pengantri Vaksin
+3. Daftar Penerima Vaksin
+4. Keluar
++++++++++++++++++++++++++++++
+2
+Joko telah selesai divaksinasi.
+```
+```powershell
++++++++++++++++++++++++
+Daftar Pengantri Vaksin
++++++++++++++++++++++++
+|No.   |Nama        |
+|124   |Mely        |
+|135   |Johan        |
+|146   |Rosi        |
+Sisa Antrian: 3
+```
+</br>
+</br>
+
+Buatlah program daftar film yang terdiri dari id, judul dan rating menggunakan double linked 
+lists, bentuk program memiliki fitur pencarian melalui ID Film dan pengurutan Rating secara 
+descending. Class Film wajib diimplementasikan dalam soal ini. 

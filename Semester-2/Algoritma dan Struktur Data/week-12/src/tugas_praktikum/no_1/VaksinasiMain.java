@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class VaksinasiMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        DoubleLinkedList queue = new DoubleLinkedList();
+        DoubleLinkedLists queue = new DoubleLinkedLists();
         int choice;
 
         do {
