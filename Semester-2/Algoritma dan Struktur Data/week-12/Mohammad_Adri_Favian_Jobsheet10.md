@@ -135,11 +135,14 @@ Size : 1
     ```
     
     **Jawab**:</br>
-     
+     - `head=head.next`: memindahkan pointer head dari node saat ini ke node setelahnya.
+    - `head.prev = null`: pointer prev dari node baru bernilai null, sehingga tidak merujuk lagi ke head yang lama 
+
 
 2. Bagaimana cara mendeteksi posisi data ada pada bagian akhir pada method removeLast()?</br>
     **Jawab**:</br>
-     
+    - dilakukan dengan cara mengecek pointer next dari posisi node saat ini. Jika next nya bernilai null, maka node tersebut ada pada posisi terakhir.
+    - Pengecekan dimulai dari head. Jika next dari head null, berarti head adalah elemen awal dan akhir. Jika tidak, head dimasukkan ke current dan current berpindah ke node selanjutnya sampai ditemukan current.next == null, yang menandakan posisi current sudah berada di akhir linked list.
 
 3. Jelaskan alasan potongan kode program di bawah ini tidak cocok untuk perintah remove!</br>
     ```java
@@ -193,6 +196,25 @@ Data akhir pada Linked Lists adalah 4
 Data indeks ke-1 pada Linked Lists adalah 40
 ```
 ### Pertanyaan Percobaan
+
+1. Jelaskan method size() pada class DoubleLinkedLists! </br>
+    **Jawab**:</br>
+
+2. Jelaskan cara mengatur indeks pada double linked lists supaya dapat dimulai dari indeks ke- 
+1! </br>
+    **Jawab**:</br>
+
+3. Jelaskan perbedaan karakteristik fungsi Add pada Double Linked Lists dan Single Linked Lists!</br>
+    **Jawab**:</br>
+
+4.  Jelaskan perbedaan logika dari kedua kode program di bawah ini! (a) (b)
+    **Jawab**:</br>
+
+
+## Tugas Praktikum
+Buat program antrian vaksinasi menggunakan queue berbasis double linked list sesuai ilustrasi 
+dan menu di bawah ini! (counter jumlah antrian tersisa di menu cetak(3) dan data orang yang 
+telah divaksinasi di menu Hapus Data(2) harus ada)  
 
 
 
