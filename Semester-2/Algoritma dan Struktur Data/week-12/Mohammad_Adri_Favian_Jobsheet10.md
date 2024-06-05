@@ -161,8 +161,10 @@ Size : 1
     ```
     
     **Jawab**:</br>
-     
-
+    - berfungsi untuk menghapus node current dari double linked lists.
+    - Kode ini memutus node current dari daftar dua arah dengan:
+        - Menghubungkan node sebelumnya (prev) dari current ke node berikutnya (next) dari current, melewati current.
+        - Menghubungkan node berikutnya (next) dari current ke node sebelumnya (prev) dari current, juga melewati current.
 
 ## Kegiatan Praktikum 3
 
