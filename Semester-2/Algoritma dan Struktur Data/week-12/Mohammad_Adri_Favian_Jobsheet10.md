@@ -201,10 +201,20 @@ Data indeks ke-1 pada Linked Lists adalah 40
 
 1. Jelaskan method size() pada class DoubleLinkedLists! </br>
     **Jawab**:</br>
+    - method sederhana yang mengembalikan nilai ukuran (jumlah elemen) dari double linked list.
 
-2. Jelaskan cara mengatur indeks pada double linked lists supaya dapat dimulai dari indeks ke- 
-1! </br>
+2. Jelaskan cara mengatur indeks pada double linked lists supaya dapat dimulai dari indeks ke-1! </br>
     **Jawab**:</br>
+    -  dengan mengisi nilai awal variabel counter index menjadi 1 yang semula adalah 0.
+    
+    ```java
+    Node current = head;
+    int i = 1; //sebelumnya 0
+    while (i<index) {
+        current = current.next;
+        i++;
+    }
+    ```
 
 3. Jelaskan perbedaan karakteristik fungsi Add pada Double Linked Lists dan Single Linked Lists!</br>
     **Jawab**:</br>
