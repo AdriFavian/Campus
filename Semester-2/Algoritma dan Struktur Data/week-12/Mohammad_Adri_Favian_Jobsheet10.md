@@ -206,7 +206,7 @@ Data indeks ke-1 pada Linked Lists adalah 40
 2. Jelaskan cara mengatur indeks pada double linked lists supaya dapat dimulai dari indeks ke-1! </br>
     **Jawab**:</br>
     -  dengan mengisi nilai awal variabel counter index menjadi 1 yang semula adalah 0.
-    
+
     ```java
     Node current = head;
     int i = 1; //sebelumnya 0
@@ -218,10 +218,42 @@ Data indeks ke-1 pada Linked Lists adalah 40
 
 3. Jelaskan perbedaan karakteristik fungsi Add pada Double Linked Lists dan Single Linked Lists!</br>
     **Jawab**:</br>
+    Perbedaan utama terletak pada pengelolaan referensi node sebelumnya (prev):
 
-4.  Jelaskan perbedaan logika dari kedua kode program di bawah ini! (a) (b)
+    - Double Linked Lists:</br>
+        - Setiap node memiliki dua referensi: prev dan next.
+        - Kita harus mengatur kedua referensi ini saat menambahkan node baru, baik di awal, tengah, maupun akhir. 
+
+    - Single Linked Lists:</br>
+        - Setiap node hanya memiliki satu referensi: next.
+        - Kita hanya perlu mengatur referensi next dari node sebelumnya dan node yang ditambahkan saat menambahkan node baru
+        - lebih sederhana
+
+4.  Jelaskan perbedaan logika dari kedua kode program di bawah ini! </br>
+    ```java
+    // kode pertama
+    public boolean isEmpty() {
+    if (size == 0) {
+    return true;
+    } else {
+    return false;
+    }
+    }
+    ```
+    ```java
+    // kode kedua
+    public boolean isEmpty() {
+    return head == null;
+    }
+    ```
+
     **Jawab**:</br>
-
+    - Kedua kode tersebut memiliki tujuan yang sama, yaitu untuk memeriksa apakah linked list kosong atau tidak.
+    - perbedaan logika:
+        - kode pertama: Bergantung pada atribut `size` untuk menentukan apakah linked list kosong.
+        - kode kedua: Bergantung pada atribut `head` untuk menentukan apakah linked list kosong.
+        - kode pertama: Lebih rentan terhadap kesalahan jika ada bug dalam pengelolaan `size`. Misalnya, jika ada operasi penambahan atau penghapusan yang tidak mengupdate `size` dengan benar, hasil dari `isEmpty()` bisa salah.
+        - kode kedua: Lebih langsung, karena hanya memeriksa apakah `head` menunjuk ke `node`. Jika linked list kosong, `head` selalu `null`.
 
 ## Tugas Praktikum
 Buat program antrian vaksinasi menggunakan queue berbasis double linked list sesuai ilustrasi 
