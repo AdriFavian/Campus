@@ -339,3 +339,136 @@ Sisa Antrian: 3
 Buatlah program daftar film yang terdiri dari id, judul dan rating menggunakan double linked 
 lists, bentuk program memiliki fitur pencarian melalui ID Film dan pengurutan Rating secara 
 descending. Class Film wajib diimplementasikan dalam soal ini. 
+
+- Full Program
+    - [Film18.java](./src/tugas_praktikum/no_2/Film18.java)
+    - [DLL.java](./src/tugas_praktikum/no_2/DLL.java)
+    - [Main.java](./src/tugas_praktikum/no_2/Main.java)
+
+Output:
+
+```powershell
+===============================
+DATA FILM LAYAR LEBAR
+===============================
+1. Tambah Data Awal
+2. Tambah Data Akhir
+3. Tambah Data Index Tertentu
+4. Hapus Data Pertama
+5. Hapus Data Terakhir
+6. Hapus Data Tertentu
+7. Cetak
+8. Cari ID Film
+9. Urut Data Rating Film-DESC
+10. Keluar
+===============================
+1
+Masukkan Data Film Posisi Awal
+ID FIlm: 1222
+Judul Film: Spider-Man: No Way Home
+Rating FIlm: 8.7
+```
+
+```powershell
+===============================
+DATA FILM LAYAR LEBAR
+===============================
+1. Tambah Data Awal
+2. Tambah Data Akhir
+3. Tambah Data Index Tertentu
+4. Hapus Data Pertama
+5. Hapus Data Terakhir
+6. Hapus Data Tertentu
+7. Cetak
+8. Cari ID Film
+9. Urut Data Rating Film-DESC
+10. Keluar
+===============================
+2
+Masukkan Data Film Posisi Akhir
+ID FIlm: 1346
+Judul Film: Uncharted
+Rating FIlm: 6.7
+```
+
+```powershell
+===============================
+DATA FILM LAYAR LEBAR
+===============================
+1. Tambah Data Awal
+2. Tambah Data Akhir
+3. Tambah Data Index Tertentu
+4. Hapus Data Pertama
+5. Hapus Data Terakhir
+6. Hapus Data Tertentu
+7. Cetak
+8. Cari ID Film
+9. Urut Data Rating Film-DESC
+10. Keluar
+===============================
+3
+Masukkan Data Film
+Urutan ke- 3 
+ID FIlm: 1234
+Judul Film: Death on The Nile
+Rating FIlm: 6.6
+Data Film ini akan masuk di urutan ke-3
+```
+
+```powershell
+===============================
+DATA FILM LAYAR LEBAR
+===============================
+1. Tambah Data Awal
+2. Tambah Data Akhir
+3. Tambah Data Index Tertentu
+4. Hapus Data Pertama
+5. Hapus Data Terakhir
+6. Hapus Data Tertentu
+7. Cetak
+8. Cari ID Film
+9. Urut Data Rating Film-DESC
+10. Keluar
+===============================
+7
+Cetak Data
+ID: 1346
+ Judul Film: Uncharted
+ Rating Film: 6.7
+ID: 1567
+ Judul Film: The Dark Knight Rises
+ Rating Film: 8.4
+ID: 1756
+ Judul Film: Skyfall
+ Rating Film: 7.8
+ID: 1234
+ Judul Film: Death on The Nile
+ Rating Film: 6.6
+ID: 1222
+ Judul Film: Spider-Man: No Way Home
+ Rating Film: 8.7
+```
+
+```powershell
+===============================
+DATA FILM LAYAR LEBAR
+===============================
+1. Tambah Data Awal
+2. Tambah Data Akhir
+3. Tambah Data Index Tertentu
+4. Hapus Data Pertama
+5. Hapus Data Terakhir
+6. Hapus Data Tertentu
+7. Cetak
+8. Cari ID Film
+9. Urut Data Rating Film-DESC
+10. Keluar
+===============================
+8
+Masukkan ID Film yang Anda cari1567
+Data Id Film: 1567 berada di node ke- 1
+IDENTITAS
+ ID Film: 1567
+ Judul Film: The Dark Knight Rises
+ IMDB Rating: 8.4
+```
