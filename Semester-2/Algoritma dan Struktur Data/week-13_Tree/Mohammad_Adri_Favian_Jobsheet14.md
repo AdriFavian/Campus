@@ -17,7 +17,7 @@
     - [BinaryTreeMain18.java](./src/BinaryTreeMain18.java)
 
 Output: 
-```json
+```powershell
 Preorder Traversal :  6 4 3 5 8 7 9 10 15
 inOrder Traversal :  3 4 5 6 7 8 9 10 15
 PostOrder Traversal :  3 5 4 7 15 10 9 8 6
@@ -67,7 +67,7 @@ secara detil untuk apa baris program tersebut?
     - [BinaryTreeArrayMain18.java](./src/BinaryTreeArrayMain18.java)    
 
 Output: 
-```json
+```powershell
 InOrder Traversal : 3 4 5 6 7 8 9 
 ```
 
