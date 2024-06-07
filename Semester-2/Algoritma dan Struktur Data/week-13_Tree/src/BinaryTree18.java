@@ -162,4 +162,68 @@ public class BinaryTree18 {
             }
         }
     }
+
+    //  menambahkan node dengan cara rekursif
+    void addRekursif(int data) {
+        root = addRekursif(root, data);
+    }
+
+    private Node18 addRekursif(Node18 current, int data) {
+        if (current == null) {
+            return new Node18(data);
+        }
+
+        if (data < current.data) {
+            current.left = addRekursif(current.left, data);
+        } else if (data > current.data) {
+            current.right = addRekursif(current.right, data);
+        }
+        return current;
+    }
+
+    // menemukan nilai minimum dalam tree
+    int findMin() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Tree is empty");
+        }
+        Node18 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current.data;
+    }
+
+    // menemukan nilai maximum dalam tree
+    int findMax() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Tree is empty");
+        }
+        Node18 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current.data;
+    }
+
+    // menampilkan data yang ada di leaf
+    void printLeaf(Node18 node) {
+        if (node != null) {
+            if (node.left == null && node.right == null) {
+                System.out.print(" " + node.data);
+            }
+            printLeaf(node.left);
+            printLeaf(node.right);
+        }
+    }
+
+    //  menampilkan berapa jumlah leaf yang ada di dalam tree
+    int hitungLeaf(Node18 node) {
+        if (node == null) {
+            return 0;
+        }
+        if (node.left == null && node.right == null) {
+            return 1;
+        }
+        return hitungLeaf(node.left) + hitungLeaf(node.right);
+    }
 }
