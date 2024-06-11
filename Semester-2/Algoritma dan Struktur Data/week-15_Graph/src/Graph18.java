@@ -96,4 +96,12 @@ public class Graph18 {
             System.out.println("Edge tidak ditemukan");
         }
     }
+
+    public int hitunngEdge() {
+        int jmlEdge = 0;
+        for (int i = 0; i < vertex; i++) {
+            jmlEdge += list[i].size();
+        }
+        return jmlEdge;
+    }
 }
