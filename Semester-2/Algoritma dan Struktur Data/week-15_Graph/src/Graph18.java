@@ -63,11 +63,37 @@ public class Graph18 {
             if (list[i].size() > 0) {
                 System.out.println("Gedung " + (char) ('A' + i) + " terhubung dengan ");
                 for (int j = 0; j < list[i].size(); j++) {
-                    System.out.print((char) ('A' + list[i].get(j)) + " (" + list[i].getJarak(j) + " m), ");
+                    System.out.print((char) ('A' + list[i].get(j)) + " (" + list[i].updateJarak(j) + " m), ");
                 }
                 System.out.println("");
             }
         }
         System.out.println("");
+    }
+
+    public void pengecekanEdge(int asal, int tujuan) throws Exception {
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                System.out.println("Gedung " + (char) ('A' + asal) + " dan " + (char) ('A' + tujuan) + " bertetangga");
+            } else {
+                System.out.println("Gedung " + (char) ('A' + asal) + " dan " + (char) ('A' + tujuan) + " tidak bertetangga");
+            }
+        }
+    }
+
+    public void updateJarak(int asal, int tujuan, int jarak) throws Exception{
+        boolean found = false;
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                list[asal].updateJarak(i, jarak);
+                found = true;
+                break;
+            }
+        }
+        if (found) {
+            System.out.println("Berhasil diupdate");
+        } else {
+            System.out.println("Edge tidak ditemukan");
+        }
     }
 }
