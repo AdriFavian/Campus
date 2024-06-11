@@ -298,4 +298,12 @@ dinamis, setidaknya terdiri dari:
 
 3. Tambahkan method hitungEdge untuk menghitung banyaknya edge yang terdapat di dalam graf!
     **Jawab:**
-
+    ```java
+    public int hitunngEdge() {
+        int jmlEdge = 0;
+        for (int i = 0; i < vertex; i++) {
+            jmlEdge += list[i].size();
+        }
+        return jmlEdge;
+    }
+    ```
